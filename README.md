@@ -51,6 +51,6 @@ Varname=value
 ```
 
 >[!IMPORTANT]
->there should not be any space before after `=` 
->:heavy_check_mark: Var=value
+>there should not be any space before after `=` <br/>
+>:white_check_mark: Var=value <br/>
 >:x: var =value

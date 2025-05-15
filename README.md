@@ -29,3 +29,28 @@ to use `./scriptpath` command the file should have executable permission.
 `#!/bin/bash` is the first line that should be included in shell script file. It is called shebang this used to interpret and check the syntax of the script file it is similar to a interpreter.
 
 use `echo` to print any statement
+
+### helloworld shell script 
+
+`helloworld.sh`
+
+```
+#!/bin/bash
+
+echo "Hello World"
+```
+
+### Creating a variable and using it
+
+`variable.sh`
+
+```
+#!/bin/bash
+
+Varname=value
+```
+
+>[!IMPORTANT]
+>there should not be any space before after `=` 
+>:heavy_check_mark: Var=value
+>:x: var =value

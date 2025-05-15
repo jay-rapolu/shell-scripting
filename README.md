@@ -40,7 +40,7 @@ use `echo` to print any statement
 echo "Hello World"
 ```
 
-### Creating a variable and using it
+### Creating a variable
 
 `variable.sh`
 
@@ -48,6 +48,18 @@ echo "Hello World"
 #!/bin/bash
 
 Varname=value
+```
+
+### using a variable
+
+`accessvariable.sh`
+
+```
+#!/bin/bash
+
+Varname=value
+
+echo $Varname
 ```
 
 >[!IMPORTANT]

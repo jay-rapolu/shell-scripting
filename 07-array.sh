@@ -11,4 +11,4 @@ Movies=("Thandel" "Hi Nanna" "HIT 3" "Pushpa 2" "Court")
 
 echo "First movie in the list is ${Movies[0]}"
 echo "Last movie in the list is ${Movies[-1]}" 
-echo "All movies in the list are ${Movies[@]}
+echo "All movies in the list are ${Movies[@]}"

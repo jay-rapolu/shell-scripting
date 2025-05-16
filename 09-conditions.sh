@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo ""
-
-if [ $! == ""]
+NUMBER=$1
+if [ $NUMBER == ""]
 then
     echo "Please pass a number as first argument along with the script to execute it"
     exit 1

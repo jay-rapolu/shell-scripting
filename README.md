@@ -1,13 +1,13 @@
 # Shell Scripting
 
-*This repo is created to learn the shell script and contains shell script practice files. below you can find the documentation.*
+_This repo is created to learn the shell script and contains shell script practice files. below you can find the documentation._
 
 ## what is shell script ?
 
-Shell Script is a file, It is used to run multiple shell commands at once as a file. It is best to use if you are working with linux internal automation.  
+Shell Script is a file, It is used to run multiple shell commands at once as a file. It is best to use if you are working with linux internal automation.
 
->[!Note]
->you must have knowledge on the linux commands before you start shell scripting.
+> [!Note]
+> you must have knowledge on the linux commands before you start shell scripting.
 
 ### Extension of shell script file
 
@@ -30,7 +30,7 @@ to use `./scriptpath` command the file should have executable permission.
 
 use `echo` to print any statement
 
-### helloworld shell script 
+### helloworld shell script
 
 `helloworld.sh`
 
@@ -50,7 +50,7 @@ echo "Hello World"
 Varname=value
 ```
 
-### using a variable
+### Accessing a variable
 
 `accessvariable.sh`
 
@@ -62,7 +62,7 @@ Varname=value
 echo $Varname
 ```
 
->[!IMPORTANT]
->there should not be any space before after `=` <br/>
->:white_check_mark: Var=value <br/>
->:x: var =value
+> [!IMPORTANT]
+> there should not be any space before after `=` <br/>
+> :white_check_mark: Var=value <br/>
+> :x: var =value

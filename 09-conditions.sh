@@ -14,10 +14,13 @@ if [ $# -gt 1 ]
 then
     echo "Please pass only one number in argument"
     exit 1
+elif [ $# -lt 0 ] 
+    echo "please pass one argument"
+    exit 1
 fi
 
 CONSTNUM=5
-NUMCHECK=$(($CONSTNUM + $1))
+NUMCHECK=$(($CONSTNUM+$1))
 
 if [[ $1 != $NUMCHECK ]]
 then

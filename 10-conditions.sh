@@ -3,7 +3,7 @@
 USERID=$(id -u)
 PACKAGE=$1
 
-if [ $# -eq 0]
+if [ $# -eq 0 ]
 then
     echo "Please enter a package name as first argument"
     exit 1

@@ -25,9 +25,10 @@ then
     exit 1
 else
     echo "checking if the package is availble or not"
-    dnf list available | grep -i $PACKAGE
+    dnf list available | grep -i $PACKAGE 2> /dev/null
     if [ $? -eq 0 ]
     then
+        echo "Package is available"
         echo "Installing the Package"
         dnf install $PACKAGE -y
         echo "Package Installed Successfully"

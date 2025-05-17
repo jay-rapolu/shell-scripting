@@ -17,7 +17,7 @@ else
     exit 1
 fi
 
-dnf list installed | grep -i $PACKAGE
+dnf list installed | grep -i $PACKAGE > /dev/null
 
 if [ $? -eq 0 ]
 then
@@ -25,7 +25,7 @@ then
     exit 1
 else
     echo "checking if the package is availble or not"
-    dnf list available | grep -i $PACKAGE 2> /dev/null
+    dnf list available | grep -i $PACKAGE > /dev/null
     if [ $? -eq 0 ]
     then
         echo "Package is available"

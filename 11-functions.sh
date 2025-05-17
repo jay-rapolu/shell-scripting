@@ -19,8 +19,7 @@ fi
 VALIDATE(){
     if [ $1 -eq 0 ]
     then
-        echo "Package is available"
-        echo "Installing the Package"
+        echo "Package is available... Installing the Package"
         dnf install $2 -y
         echo "Package Installed Successfully"
     else
@@ -36,6 +35,6 @@ then
     echo "The Package is already installed in the machine"
 else
     echo "checking if the package is availble or not"
-    dnf list available $PACKAGE > /dev/null
+    dnf list available $1 > /dev/null
     VALIDATE $? $1
 fi

@@ -28,7 +28,7 @@ VALIDATE(){
     fi
 }
 
-#dnf list installed $1 > /dev/null
+dnf list installed $1 2> /dev/null
 
 if [ $? -eq 0 ]
 then

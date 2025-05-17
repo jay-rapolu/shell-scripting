@@ -3,6 +3,12 @@
 USERID=$(id -u)
 PACKAGE=$1
 
+if [ $# -eq 0]
+then
+    echo "Please enter a package name as first argument"
+    exit 1
+fi
+
 if [ $USERID -eq 0 ]
 then
     echo "Script is Running with root permissions.. proceeding for package installation"

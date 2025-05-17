@@ -26,8 +26,8 @@ then
 else
     echo "checking if the package is availble or not"
     dnf list installed | grep -i $PACKAGE
-    echo $?
-    if [ $? -eq 0 ]
+    PACKAGEOUTPUT=$?
+    if [ $PACKAGEOUTPUT -eq 0 ]
     then
         echo "Installing the Package"
         dnf install $PACKAGE -y

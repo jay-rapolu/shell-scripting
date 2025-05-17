@@ -30,6 +30,7 @@ else
     then
         echo "Installing the Package"
         dnf install $PACKAGE -y
+        echo "Package Installed Successfully"
     else
         echo "entered package name is incorrect or package name is not available."
         exit 1

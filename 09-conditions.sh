@@ -21,6 +21,7 @@ then
 fi
 
 CONSTNUM=5
+INPUT=$1
 NUMCHECK=$(($CONSTNUM+$1))
 
 echo $1
@@ -32,9 +33,9 @@ then
     exit 1
 fi
 
-if [ $1 -ge 0 ]
+if [ $INPUT -gt 0 ]
 then
-    echo "entered number $1 is a positive number"
+    echo "entered number $INPUT is a positive number"
 else
-    echo "entered number $1 is a negative number"
+    echo "entered number $INPUT is a negative number"
 fi

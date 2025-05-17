@@ -20,22 +20,21 @@ then
     exit 1
 fi
 
-CONSTNUM=5
+CONSTNUM=0
 INPUT=$1
 NUMCHECK=$(($CONSTNUM+$1))
 
 echo $1
 echo $NUMCHECK
 
-if [[ $1 == $NUMCHECK ]]
+if [[ $NUMCHECK -eq 0 ]]
 then
-    echo "Please enter a numeric value"
+    echo "Please enter a numeric value or non-zero number"
     exit 1
-fi
-
-if [ $INPUT -gt 0 ]
+elif [[ $NUMCHECK -gt 0 ]]
 then
     echo "entered number $INPUT is a positive number"
-else
+elif [[ $NUMCHECK -lt 0 ]]
+then
     echo "entered number $INPUT is a negative number"
 fi

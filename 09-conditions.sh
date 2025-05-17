@@ -26,7 +26,7 @@ NUMCHECK=$(($CONSTNUM+$1))
 echo $1
 echo $NUMCHECK
 
-if [[ $1 != $NUMCHECK ]]
+if [[ $1 == $NUMCHECK ]]
 then
     echo "Please enter a numeric value"
     exit 1

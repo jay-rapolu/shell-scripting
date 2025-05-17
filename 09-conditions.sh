@@ -14,7 +14,7 @@ if [ $# -gt 1 ]
 then
     echo "Please pass only one number in argument"
     exit 1
-elif [ $# -lt 0 ] 
+elif [ $# -lt 1 ] 
 then
     echo "please pass one argument"
     exit 1

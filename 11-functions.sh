@@ -16,7 +16,7 @@ else
     exit 1
 fi
 
-VALIDATE() {
+VALIDATE(){
     if [ $1 -eq 0 ]
     then
         echo "Package is available"
@@ -37,5 +37,5 @@ then
 else
     echo "checking if the package is availble or not"
     dnf list available $PACKAGE > /dev/null
-    VALIDATE() $? $1
+    VALIDATE $? $1
 fi

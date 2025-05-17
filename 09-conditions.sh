@@ -28,12 +28,13 @@ echo $NUMCHECK
 
 if [[ $1 != $NUMCHECK ]]
 then
+    echo "Please enter a numeric value"
+    exit 1
+else
     if [ $1 -ge 0 ]
     then
         echo "entered number $1 is a positive number"
     else
         echo "entered number $1 is a negative number"
     fi
-else
-    echo "Please enter a numeric value"
 fi

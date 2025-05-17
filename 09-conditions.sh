@@ -10,7 +10,16 @@
 
 echo "This Script is used to check if the entered number is positive or negative"
 
-if [[ -n "$1" && "$1" -eq "$1" 2>/dev/null ]]
+if [ $# -gt 1 ]
+then
+    echo "Please pass only one number in argument"
+    exit 1
+fi
+
+CONSTNUM=5
+NUMCHECK=$(($CONSTNUM + $1))
+
+if [[ $1 != $NUMCHECK ]]
 then
     if [ $1 -ge 0 ]
     then

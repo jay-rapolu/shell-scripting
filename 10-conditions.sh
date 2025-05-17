@@ -17,7 +17,7 @@ else
     exit 1
 fi
 
-dnf list installed | $PACKAGE
+dnf list installed | grep -i $PACKAGE
 
 if [ $? == 0 ]
 then

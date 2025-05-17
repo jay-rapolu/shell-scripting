@@ -23,6 +23,8 @@ fi
 CONSTNUM=5
 NUMCHECK=$(($CONSTNUM+$1))
 
+echo $?
+
 if [[ $1 != $NUMCHECK ]]
 then
     if [ $1 -ge 0 ]

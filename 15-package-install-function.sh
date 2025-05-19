@@ -9,7 +9,7 @@ mkdir -p $LOG_DIR
 
 if [ $USERID -ne 0 ]
 then
-    echo "Error:: Please run the script as root user." | tee -p $LOG_PATH
+    echo "Error:: Please run the script as root user." | tee -a $LOG_PATH
     exit 1
 else
     echo "Script is running as root user.. Proceeding to Installation."

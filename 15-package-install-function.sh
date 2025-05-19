@@ -30,6 +30,7 @@ dnf list installed mysqld
 if [ $? -ne 0 ]
 then
     echo "Package is not Installed.. Installing the Package." | tee -a $LOG_PATH
+    dnf install mysqld -y
     VALIDATE $? mysqld
 else
     echo "Package is available.. no need to install."

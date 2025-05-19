@@ -1,10 +1,15 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOG_DIR=/var/log/shell-script
+FILE_NAME=$(echo $0 | cut -d '.' -f1)
+LOG_PATH=/var/log/shell-script/$FILE_NAME.log
+
+mkdir -p $LOG_DIR
 
 if [ $USERID -ne 0 ]
 then
-    echo "Error:: Please run the script as root user."
+    echo "Error:: Please run the script as root user." | tee -p $LOG_PATH
     exit 1
 else
     echo "Script is running as root user.. Proceeding to Installation."

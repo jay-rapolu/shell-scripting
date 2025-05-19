@@ -26,3 +26,37 @@ then
 else
     echo "Package is available.. no need to install."
 fi
+
+dnf list installed nginx
+
+if [ $? -ne 0 ]
+then
+    echo "Package is not Installed.. Installing the Package."
+    dnf install nginx -y
+    if [ $? -ne 0 ]
+    then
+        echo "Package Installation was unsuccessful"
+        exit 1
+    else
+        echo "Package Installation was successfully done."
+    fi
+else
+    echo "Package is available.. no need to install."
+fi
+
+dnf list installed python3
+
+if [ $? -ne 0 ]
+then
+    echo "Package is not Installed.. Installing the Package."
+    dnf install python3 -y
+    if [ $? -ne 0 ]
+    then
+        echo "Package Installation was unsuccessful"
+        exit 1
+    else
+        echo "Package Installation was successfully done."
+    fi
+else
+    echo "Package is available.. no need to install."
+fi

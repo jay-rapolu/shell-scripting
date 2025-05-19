@@ -37,7 +37,7 @@ do
     dnf list installed $package &>> $LOG_PATH
     if [ $? -ne 0 ]
     then
-        echo -e "Package is not Installed.. ${Y}Installing the Package.${D}" | tee -a $LOG_PATH
+        echo -e "${package} Package is not Installed.. ${Y}Installing the Package.${D}" | tee -a $LOG_PATH
         dnf install $package -y &>> $LOG_PATH
         VALIDATE $? $package 
     else
